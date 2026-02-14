@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubh Varshney | Portfolio Website</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121a2b;
+      --text: #e8eefc;
+      --muted: #a7b3cc;
+      --accent: #6ea8fe;
+      --accent2: #7ef0c2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1a2a4a 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      padding: 24px 0 56px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 28px;
+      background: rgba(18, 26, 43, 0.9);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      padding: 24px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+
+    .profile-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 3px solid rgba(110,168,254,.6);
+      box-shadow: 0 10px 30px rgba(0,0,0,.45);
+      background: #0f1627;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      letter-spacing: .3px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-top: 6px;
+      font-size: 1.02rem;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .chip {
+      background: rgba(110,168,254,.15);
+      border: 1px solid rgba(110,168,254,.35);
+      color: #dcebff;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: .9rem;
+    }
+
+    .grid {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+      color: var(--accent2);
+    }
+
+    .muted { color: var(--muted); }
+
+    .links a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-top: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .links a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 26px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      .profile-img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="profile-wrap">
+        <!-- Place your image file as myimage.jpeg in the same folder -->
+        <img src="myimage.jpeg" alt="Shubh Varshney profile photo" class="profile-img" />
+      </div>
+      <div>
+        <h1>Shubh Varshney</h1>
+        <p class="subtitle">Aspiring Software Developer | Building Logic With DSA | Aiming Towards Advanced Projects</p>
+        <p class="muted"><strong>College:</strong> Rajkiya Engineering College Mainpuri<br/>
+        <strong>Location:</strong> Kasganj, Uttar Pradesh, India</p>
+        <ul class="chips">
+          <li class="chip">C++</li>
+          <li class="chip">Data Structures</li>
+          <li class="chip">Algorithms</li>
+          <li class="chip">Web Development</li>
+          <li class="chip">C</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>About Me</h2>
+        <p class="muted">I am a Computer Science student at REC Mainpuri who enjoys breaking down complex problems and solving them with clean, efficient code.
+        With a strong base in C and C++, I’m currently mastering Data Structures and Algorithms to sharpen my problem-solving ability. I believe strong fundamentals create strong engineers.
+        My goal is to grow into a software engineer capable of building scalable and secure systems that solve real-world challenges. </p>
+      </article>
+
+      <article class="card">
+        <h2>Contact & Profiles</h2>
+        <p class="muted"><strong>Email:</strong> <a href="mailto:shubhvarshney455@gmail.com" style="color: var(--accent);">shubhvarshney455@gmail.com</a></p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/shubh-varshney-18ab11380/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/shubhvarshney29" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Current Focus</h2>
+        <ul class="muted">
+          <li>Data Structures & Algorithms (DSA)</li>
+          <li>Frontend + Backend fundamentals</li>
+          <li>Strong problem-solving mindset</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Goal</h2>
+        <p class="muted">Build secure, efficient software and grow into a strong software engineer by continuously learning, building projects, and improving core CS fundamentals.</p>
+      </article>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Shubh Varshney — Frontend Portfolio
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
