@@ -73,6 +73,7 @@ min-height:90vh;
 }
 
 .hero h1{
+font-style: oblique;
 font-size:50px;
 margin-bottom:15px;
 }
