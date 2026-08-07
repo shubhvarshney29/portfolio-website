@@ -4,17 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubh Varshney | Portfolio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Shubh Varshney | Software Developer Portfolio</title>
+    <meta name="description"    
+        content="Shubh Varshney - Aspiring software developer focused on DSA, C++, web development, and building a strong career in tech.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <div class="page-glow page-glow-one"></div>
+    <div class="page-glow page-glow-two"></div>
 
-    <nav>
-        <h2>MY PORTFOLIO</h2>
-        <ul>
+    <nav class="navbar">
+        <a href="#home" class="brand">Shubh<span> Varshney</span></a>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -23,74 +30,141 @@
         </ul>
     </nav>
 
-    <section class="hero" id="home">
-        <img src="myimage.jpeg" alt="Shubh Varshney">
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-tag">AI Developer and Competitive Programmer</p>
+                <h1>Building a <span>high-growth tech career</span> with strong fundamentals, consistent scalable execution.</h1>
+                <p class="hero-text">
+                    I’m Shubh Varshney, a Computer Science student focused on DSA, C++, AI Web development (Java SpringBoot).
+                    I’m preparing myself to become the kind of developer,companies trust to solve real problems at scale.
+                </p>
 
-        <h1><span>Shubh Varshney</span></h1>
-        <p>Aspiring Software Developer | Building Logic With DSA | Aiming Towards Advanced Learnings</p>
-    </section>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
 
-    <section class="about" id="about">
-        <h2 class="section-title">About Me</h2>
-        <p>
-            I am a Computer Science student at REC Mainpuri who enjoys breaking down complex problems and solving them
-            with clean, efficient code.
-            With a strong base in C and C++. I’m currently mastering Data Structures and Algorithms to sharpen my
-            problem-solving ability. I believe in strong fundamentals and a winner mindset.
-            My goal is to grow as a software engineer who is capable of building scalable and secure systems that solve
-            real-world challenges.
-        </p>
-    </section>
-
-    <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">C++</div>
-            <div class="skill-card">Java</div>
-            <div class="skill-card">Data Structures</div>
-            <div class="skill-card">Algorithms</div>
-            <div class="skill-card">Web Development</div>
-            <div class="skill-card">mySQL</div>
-            <div class="skill-card">MongoDB</div>
-            <div class="skill-card">Git & Github</div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Personal Portfolio</h3>
-                <p>Professional Portfolio built using HTML & CSS.</p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <h3>300+</h3>
+                        <p>Hours invested in coding & learning</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Algorithmist</h3>
+                        <p>Determined on logic building and faster execution</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Architect</h3>
+                        <p>Focusing on cracking real world problems</p>
+                    </div>
+                </div>
             </div>
-            <a href="https://leetcode.com/u/Shubhvarshney_29/" target="_blank" class="project-card"
-                style="text-decoration: none; color: inherit;">
-                <h3>DSA Practice Journey</h3>
-                <p>Consistent problem-solving practice to master algorithms and enhance logic building.</p>
-            </a>
-            <a href="https://shubhvarshney29.github.io/Mini-Amazon/" target="_blank" class="project-card"
-                style="text-decoration: none; color: inherit;">
-                <h3>MINI Amazon</h3>
-                <p>Amazon-like e-commerce website with API integrations and an AI chatbot</p>
-            </a>
 
-        </div>
-    </section>
+            <div class="hero-image-wrapper">
+                <div class="image-ring"></div>
+                <img src="myimage.jpeg" alt="Shubh Varshney">
+            </div>
+        </section>
 
-    <section class="contact" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <p>Email: <a href="mailto:shubhvarshney455@gmail.com">shubhvarshney455@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/shubh-varshney-18ab11380/" target="_blank">View LinkedIn</a>
-        </p>
-        <p>GitHub: <a href="https://github.com/shubhvarshney29" target="_blank">Visit GitHub</a></p>
-    </section>
+        <section class="about section-card" id="about">
+            <div class="section-heading">
+                <p class="section-kicker">About Me</p>
+                <h2 class="section-title">A disciplined learner with a builder mindset</h2>
+            </div>
+            <p>
+                I am a Computer Science student at REC Mainpuri who enjoys turning complex ideas into simple,
+                efficient solutions. My current focus is strengthening my command over C, C++, Java, Data Structures,
+                Algorithms, Computer fundamentals and Ai Web Development. So I can grow into a software engineer capable of building
+                scalable and reliable systems.
+            </p>
+            <p>
+                I believe premium careers are built on consistency, clarity, and strong execution. That is why I invest
+                deeply in problem solving, practice regularly, and keep improving my technical and communication skills.
+            </p>
+        </section>
+
+        <section id="skills" class="section-card">
+            <div class="section-heading">
+                <p class="section-kicker">Core Skills</p>
+                <h2 class="section-title">Technologies and strengths I’m developing</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">C Programming</div>
+                <div class="skill-card">C++</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">Data Structures</div>
+                <div class="skill-card">Algorithms</div>
+                <div class="skill-card">Java Web Development</div>
+                <div class="skill-card">MySQL</div>
+                <div class="skill-card">Git & GitHub</div>
+                
+            </div>
+        </section>
+
+        <section id="projects" class="section-card">
+            <div class="section-heading">
+                <p class="section-kicker">Featured Work</p>
+                <h2 class="section-title">Projects that reflect my learning journey</h2>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-badge">Portfolio</div>
+                    <h3>Personal Portfolio Website</h3>
+                    <p>
+                        A polished personal portfolio built using HTML and CSS with a modern layout, smooth visuals,
+                        and strong personal branding.
+                    </p>
+                </div>
+
+                <a href="https://leetcode.com/u/Shubhvarshney_29/" target="_blank" class="project-card project-link">
+                    <div class="project-badge">DSA</div>
+                    <h3>LeetCode Practice Journey</h3>
+                    <p>
+                        Continuous problem-solving practice to improve algorithmic thinking, coding speed, and interview
+                        readiness.
+                    </p>
+                </a>
+
+                <div class="project-card">
+                    <div class="project-badge">Learning</div>
+                    <h3>Core Programming Practice</h3>
+                    <p>
+                        A growing collection of C and C++ programs focused on logic building, fundamentals, and
+                        confidence in problem solving.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section-card" id="contact">
+            <div class="section-heading">
+                <p class="section-kicker">Contact</p>
+                <h2 class="section-title">Let’s connect</h2>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:shubhvarshney455@gmail.com" class="contact-card">
+                    <span>Email</span>
+                    <strong>shubhvarshney455@gmail.com</strong>
+                </a>
+                <a href="https://www.linkedin.com/in/shubh-varshney-18ab11380/" target="_blank" class="contact-card">
+                    <span>LinkedIn</span>
+                    <strong>View Profile</strong>
+                </a>
+                <a href="https://github.com/shubhvarshney29" target="_blank" class="contact-card">
+                    <span>GitHub</span>
+                    <strong>Explore Projects</strong>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        © 2026 Shubh Varshney | JUST PURE LOVE 🌹
+        © 2005 Shubh Varshney | Designed with focus, ambition, and consistency.
     </footer>
-
 </body>
 
 </html>
-
-
