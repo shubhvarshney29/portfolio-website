@@ -4,167 +4,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubh Varshney | Software Developer Portfolio</title>
-    <meta name="description"    
-        content="Shubh Varshney - Aspiring software developer focused on DSA, C++, web development, and building a strong career in tech.">
+    <title>Shubh Varshney | AI Developer & Competitive Programmer</title>
+    <meta name="description"
+        content="Shubh Varshney - Computer Science student focused on DSA, C++, AI Web Development, and building scalable tech solutions.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
-    <div class="page-glow page-glow-one"></div>
-    <div class="page-glow page-glow-two"></div>
+<body data-scroll-progress>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
-    <nav class="navbar">
-        <a href="#home" class="brand">Shubh<span> Varshney</span></a>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="navbar-wrapper">
+        <nav class="navbar glass-card">
+            <a href="#home" class="brand">
+                <span class="brand-text">Shubh</span><span class="brand-accent"> Varshney</span>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#home" class="active"><i class="fa-solid fa-house nav-icon"></i><span>Home</span></a></li>
+                <li><a href="#about"><i class="fa-solid fa-user nav-icon"></i><span>About</span></a></li>
+                <li><a href="#skills"><i class="fa-solid fa-code nav-icon"></i><span>Skills</span></a></li>
+                <li><a href="#projects"><i class="fa-solid fa-laptop-code nav-icon"></i><span>Projects</span></a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope nav-icon"></i><span>Contact</span></a></li>
+                <li class="nav-cta-mobile"><a href="#contact" class="btn btn-glass-nav">Let's Connect</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-glass-nav btn-nav-desktop">Let's Connect</a>
+        </nav>
+    </header>
 
     <main>
         <section class="hero" id="home">
             <div class="hero-content">
-                <p class="hero-tag">AI Developer and Competitive Programmer</p>
-                <h1>Building a <span>high-growth tech career</span> with strong fundamentals, consistent scalable execution.</h1>
+                <div class="hero-tag glass-badge">
+                    <span class="pulse-dot"></span>
+                    <span id="typed-role" class="typed-role"></span>
+                   Aspiring Ai enginner & Competitive Programmer
+                </div>
+                <h1 class="hero-title">
+                    Building <span class="text-gradient shine-text">high-growth tech</span> with scalable fundamentals.
+                </h1>
                 <p class="hero-text">
-                    I’m Shubh Varshney, a Computer Science student focused on DSA, C++, AI Web development (Java SpringBoot).
-                    I’m preparing myself to become the kind of developer,companies trust to solve real problems at scale.
+                    I'm Shubh Varshney, a Computer Science student passionate about Data Structures & Algorithms, C++, Python
+                    and AI-driven Web Applications. Crafting clean code and solving complex real-world problems.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="#projects" class="btn btn-primary magnetic">
+                        <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-glass magnetic">
+                        <span>Contact Me</span> <i class="fa-solid fa-paper-plane"></i>
+                    </a>
                 </div>
 
                 <div class="hero-stats">
-                    <div class="stat-card">
-                        <h3>300+</h3>
-                        <p>Hours invested in coding & learning</p>
+                    <div class="stat-card glass-card mirror-card">
+                        <div class="stat-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="300">300+</h3>
+                            <p>Hours invested in DSA & C++</p>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <h3>Algorithmist</h3>
-                        <p>Determined on logic building and faster execution</p>
+                    <div class="stat-card glass-card mirror-card">
+                        <div class="stat-icon"><i class="fa-solid fa-brain"></i></div>
+                        <div class="stat-info">
+                            <h3>Algorithmist</h3>
+                            <p>Logic building & speed execution</p>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <h3>Architect</h3>
-                        <p>Focusing on cracking real world problems</p>
+                    <div class="stat-card glass-card mirror-card">
+                        <div class="stat-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <div class="stat-info">
+                            <h3>Architect</h3>
+                            <p>Real-world scalable solutions</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="hero-image-wrapper">
-                <div class="image-ring"></div>
-                <img src="myimage.jpeg" alt="Shubh Varshney">
+            <div class="hero-image-wrapper parallax-portrait">
+                <div class="mirror-container">
+                    <div class="glass-frame tilt-card">
+                        <span class="frame-ring"></span>
+                        <div class="glass-reflection-beam"></div>
+                        <img src="myimage.jpeg" alt="Shubh Varshney" class="hero-portrait" loading="eager">
+                    </div>
+
+              
+                    <div class="mirror-reflection" aria-hidden="true">
+                        <img src="myimage.jpeg" alt="">
+                        <div class="mirror-gradient-overlay"></div>
+                        <div class="mirror-sheen"></div>
+                    </div>
+
+                    <div class="mirror-platform" aria-hidden="true"></div>
+                </div>
+
+                <div class="hero-floating-badge badge-1 glass-card">
+                    <i class="fa-solid fa-code-commit"></i>
+                    <div>
+                        <strong>REC Mainpuri</strong>
+                        <span>2nd Year CSE Student</span>
+                    </div>
+                </div>
+                <div class="hero-floating-badge badge-2 glass-card">
+                    <i class="fa-solid fa-fire"></i>
+                    <div>
+                        <strong>AlgoMaster</strong>
+                        <span>450+ Problems</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="about section-card" id="about">
+        <section class="about section-card glass-card mirror-card" id="about">
             <div class="section-heading">
-                <p class="section-kicker">About Me</p>
-                <h2 class="section-title">A disciplined learner with a builder mindset</h2>
+                <span class="section-kicker glass-badge"><i class="fa-solid fa-compass"></i> About Me</span>
+                <h2 class="section-title">Disciplined Learner with a Builder's Mindset</h2>
             </div>
-            <p>
-                I am a Computer Science student at REC Mainpuri who enjoys turning complex ideas into simple,
-                efficient solutions. My current focus is strengthening my command over C, C++, Java, Data Structures,
-                Algorithms, Computer fundamentals and Ai Web Development. So I can grow into a software engineer capable of building
-                scalable and reliable systems.
-            </p>
-            <p>
-                I believe premium careers are built on consistency, clarity, and strong execution. That is why I invest
-                deeply in problem solving, practice regularly, and keep improving my technical and communication skills.
-            </p>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a Computer Science engineering student at REC Mainpuri who enjoys turning intricate
+                        technical challenges into elegant, efficient, and scalable software solutions.
+                    </p>
+                    <p>
+                        My core focus revolves around mastering C, C++, Data Structures & Algorithms, Computer
+                        Fundamentals, and AI Web Development (Java SpringBoot ecosystem). I continually push my limits
+                        through daily problem-solving and architectural practice.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item glass-card" style="--reveal-delay: 0.05s">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <strong>B.Tech CSE</strong>
+                            <span>Rajkiya Engineering College Mainpuri ,29</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item glass-card" style="--reveal-delay: 0.15s">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <div>
+                            <strong>Core Objective</strong>
+                            <span>Architecting scalable, reliable software systems</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item glass-card" style="--reveal-delay: 0.25s">
+                        <i class="fa-solid fa-bolt"></i>
+                        <div>
+                            <strong>Key Ethos</strong>
+                            <span>Consistency, precision, and relentless practice</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="skills" class="section-card">
+        <section id="skills" class="section-card glass-card mirror-card">
             <div class="section-heading">
-                <p class="section-kicker">Core Skills</p>
-                <h2 class="section-title">Technologies and strengths I’m developing</h2>
+                <span class="section-kicker glass-badge"><i class="fa-solid fa-layer-group"></i> Core Tech</span>
+                <h2 class="section-title">Technologies & Core Competencies</h2>
+            </div>
+            
+            <div class="skills-tabs" role="tablist" aria-label="Filter skills">
+                <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+                <button class="tab-btn" data-filter="languages" role="tab">Languages</button>
+                <button class="tab-btn" data-filter="dsa" role="tab">DSA & Core</button>
+                <button class="tab-btn" data-filter="web" role="tab">Web & DB</button>
+                <button class="tab-btn" data-filter="tools" role="tab">Tools</button>
             </div>
 
             <div class="skills-grid">
-                <div class="skill-card">C Programming</div>
-                <div class="skill-card">C++</div>
-                <div class="skill-card">Python</div>
-                <div class="skill-card">Data Structures</div>
-                <div class="skill-card">Algorithms</div>
-                <div class="skill-card">Java Web Development</div>
-                <div class="skill-card">MySQL</div>
-                <div class="skill-card">Git & GitHub</div>
-                
+                <div class="skill-card glass-card mirror-card" data-category="languages" style="--reveal-delay: 0.02s">
+                    <div class="skill-icon"><i class="fa-solid fa-c"></i></div>
+                    <div class="skill-info">
+                        <h4>C Language</h4>
+                        <span class="skill-level">Fundamentals & Memory</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card mirror-card" data-category="languages" style="--reveal-delay: 0.07s">
+                    <div class="skill-icon"><i class="fa-solid fa-file-code"></i></div>
+                    <div class="skill-info">
+                        <h4>C++</h4>
+                        <span class="skill-level">STL & Competitive Coding</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card mirror-card" data-category="languages" style="--reveal-delay: 0.12s">
+                    <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                    <div class="skill-info">
+                        <h4>Python</h4>
+                        <span class="skill-level">Scripting & Logic</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card mirror-card" data-category="dsa" style="--reveal-delay: 0.17s">
+                    <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <div class="skill-info">
+                        <h4>Data Structures</h4>
+                        <span class="skill-level">Trees, Graphs, Dynamic Prog.</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card mirror-card" data-category="dsa" style="--reveal-delay: 0.22s">
+                    <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <div class="skill-info">
+                        <h4>Algorithms</h4>
+                        <span class="skill-level">Optimization & Speed</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card mirror-card" data-category="web" style="--reveal-delay: 0.27s">
+                    <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+                    <div class="skill-info">
+                        <h4>Java Web Dev</h4>
+                        <span class="skill-level">SpringBoot & REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card mirror-card" data-category="web" style="--reveal-delay: 0.32s">
+                    <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                    <div class="skill-info">
+                        <h4>MySQL</h4>
+                        <span class="skill-level">Relational DB & Queries</span>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-card mirror-card" data-category="tools" style="--reveal-delay: 0.37s">
+                    <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                    <div class="skill-info">
+                        <h4>Git & GitHub</h4>
+                        <span class="skill-level">Version Control & Workflow</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="projects" class="section-card">
+        <section id="projects" class="section-card glass-card mirror-card">
             <div class="section-heading">
-                <p class="section-kicker">Featured Work</p>
-                <h2 class="section-title">Projects that reflect my learning journey</h2>
+                <span class="section-kicker glass-badge"><i class="fa-solid fa-star"></i> Featured Work</span>
+                <h2 class="section-title">Projects & Problem Solving Highlights</h2>
             </div>
 
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-badge">Portfolio</div>
+                <div class="project-card glass-card mirror-card" style="--reveal-delay: 0.05s">
+                    <span class="project-mirror-beam"></span>
+                    <div class="project-header">
+                        <span class="project-badge glass-badge">FrontEnd Mastery</span>
+                        <div class="project-links">
+                            <a href="#home" title="View Portfolio"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
                     <h3>Personal Portfolio Website</h3>
                     <p>
-                        A polished personal portfolio built using HTML and CSS with a modern layout, smooth visuals,
-                        and strong personal branding.
+                        A Modern personal portfolio website featuring dynamic effects and Butter smooth scroll animations.
                     </p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS</span>
+                        <span>JavaScript ES6</span>
+                    </div>
                 </div>
-
-                <a href="https://leetcode.com/u/Shubhvarshney_29/" target="_blank" class="project-card project-link">
-                    <div class="project-badge">DSA</div>
-                    <h3>LeetCode Practice Journey</h3>
+                <a href="https://codolio.com/profile/Shubhzzz" target="_blank" rel="noopener noreferrer"
+                    class="project-card glass-card mirror-card project-link" style="--reveal-delay: 0.15s">
+                    <span class="project-mirror-beam"></span>
+                    <div class="project-header">
+                        <span class="project-badge glass-badge">DSA & CP</span>
+                        <div class="project-links">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <h3>Problem Solving Journey</h3>
                     <p>
-                        Continuous problem-solving practice to improve algorithmic thinking, coding speed, and interview
-                        readiness.
+                        Rigorous problem-solving streak in C++ & Python on various platforms like Codeforces & leetcode , focusing on algorithmic complexity, optimal space-time
+                        trade-offs, and algorithmic mastery.
                     </p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>CodeForces</span>
+                        <span>Algorithms</span>
+                    </div>
                 </a>
 
-                <div class="project-card">
-                    <div class="project-badge">Learning</div>
-                    <h3>Core Programming Practice</h3>
+                <div class="project-card glass-card mirror-card" style="--reveal-delay: 0.25s">
+                    <span class="project-mirror-beam"></span>
+                    <div class="project-header">
+                        <span class="project-badge glass-badge">Core Practice</span>
+                        <div class="project-links">
+                            <a href="https://github.com/shubhvarshney29" target="_blank" title="GitHub Repo"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Core Systems & Logic Repository</h3>
                     <p>
-                        A growing collection of C and C++ programs focused on logic building, fundamentals, and
-                        confidence in problem solving.
+                        A structured library of C/C++ algorithms, data structure implementations, and logic puzzles
+                        built for strong engineering fundamentals.
                     </p>
+                    <div class="project-tech">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Git</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact section-card" id="contact">
+        <!-- Contact Section -->
+        <section class="contact section-card glass-card mirror-card" id="contact">
             <div class="section-heading">
-                <p class="section-kicker">Contact</p>
-                <h2 class="section-title">Let’s connect</h2>
+                <span class="section-kicker glass-badge"><i class="fa-solid fa-comments"></i> Get In Touch</span>
+                <h2 class="section-title">Let's Connect & Collaborate</h2>
             </div>
 
             <div class="contact-grid">
-                <a href="mailto:shubhvarshney455@gmail.com" class="contact-card">
-                    <span>Email</span>
-                    <strong>shubhvarshney455@gmail.com</strong>
+                <div class="contact-card glass-card mirror-card" id="copy-email-btn" role="button" tabindex="0"
+                    style="--reveal-delay: 0.05s">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-details">
+                        <span>Direct Email</span>
+                        <strong>shubhvarshney455@gmail.com</strong>
+                        <small><i class="fa-regular fa-copy"></i> Click to copy address</small>
+                    </div>
+                </div>
+
+                <a href="https://www.linkedin.com/in/shubh-varshney-18ab11380/" target="_blank" rel="noopener noreferrer"
+                    class="contact-card glass-card mirror-card" style="--reveal-delay: 0.15s">
+                    <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div class="contact-details">
+                        <span>LinkedIn</span>
+                        <strong>Shubh Varshney</strong>
+                        <small>Connect professionally <i class="fa-solid fa-arrow-right"></i></small>
+                    </div>
                 </a>
-                <a href="https://www.linkedin.com/in/shubh-varshney-18ab11380/" target="_blank" class="contact-card">
-                    <span>LinkedIn</span>
-                    <strong>View Profile</strong>
-                </a>
-                <a href="https://github.com/shubhvarshney29" target="_blank" class="contact-card">
-                    <span>GitHub</span>
-                    <strong>Explore Projects</strong>
+
+                <a href="https://github.com/shubhvarshney29" target="_blank" rel="noopener noreferrer"
+                    class="contact-card glass-card mirror-card" style="--reveal-delay: 0.25s">
+                    <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="contact-details">
+                        <span>GitHub</span>
+                        <strong>@shubhvarshney29</strong>
+                        <small>Explore repositories <i class="fa-solid fa-arrow-right"></i></small>
+                    </div>
                 </a>
             </div>
         </section>
     </main>
-
-    <footer>
-        © 2005 Shubh Varshney | Designed with focus, ambition, and consistency.
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <p>© 2005 <strong> AlgoMonster</strong> | Crafted with Elegance</p>
+            <div class="footer-socials">
+                <a href="https://github.com/shubhvarshney29" target="_blank" title="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shubh-varshney-18ab11380/" target="_blank"
+                    title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:shubhvarshney455@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
+
+
+    <a href="#home" class="back-to-top glass-card" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
