@@ -1,3 +1,4 @@
+
 :root {
   --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-heading: 'Space Grotesk', sans-serif;
@@ -25,7 +26,6 @@
   --transition-smooth: all 0.45s var(--ease-smooth);
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +47,6 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
-
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -156,7 +155,6 @@ body {
   50% { transform: translate(40px, -60px) scale(1.1); }
   100% { transform: translate(-30px, 50px) scale(0.95); }
 }
-
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
@@ -425,7 +423,6 @@ h1, h2, h3, h4 {
 .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
 
 main {
   width: min(1140px, calc(100% - 40px));
@@ -858,7 +855,6 @@ section {
   color: var(--text-muted);
 }
 
-
 .skills-tabs {
   display: flex;
   gap: 10px;
@@ -1015,7 +1011,6 @@ section {
   color: var(--accent-pink);
 }
 
-/* --- Contact Section --- */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1074,7 +1069,6 @@ section {
   color: var(--accent-pink);
 }
 
-
 .toast-msg {
   position: fixed;
   bottom: 30px;
@@ -1097,7 +1091,6 @@ section {
   opacity: 1;
 }
 
-/* --- Footer --- */
 .glass-footer {
   width: min(1140px, calc(100% - 40px));
   margin: 0 auto 30px;
@@ -1168,7 +1161,6 @@ section {
   transform: translateY(-4px) scale(1.08);
   box-shadow: 0 10px 25px rgba(255, 117, 140, 0.45);
 }
-
 
 .reveal-hidden {
   opacity: 0;
@@ -1317,7 +1309,6 @@ section {
     text-align: center;
   }
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   *,
