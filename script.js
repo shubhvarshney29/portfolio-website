@@ -1,7 +1,7 @@
 (() => {
     'use strict';
 
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches; 
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const lerp = (a, b, n) => a + (b - a) * n;
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -20,7 +20,6 @@
         initTypedEffect();
         initCopyEmail();
     });
-
 
     function initCursorGlow() {
         const cursorGlow = document.createElement('div');
@@ -109,6 +108,7 @@
         navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
         window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
     }
+
     function initScrollReveal() {
         const targets = Array.from(document.querySelectorAll(
             '.glass-card, .section-heading, .stat-card, .highlight-item, .contact-card'
@@ -138,6 +138,7 @@
             observer.observe(el);
         });
     }
+
     function initActiveNav() {
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.nav-links a');
@@ -208,6 +209,7 @@
             });
         });
     }
+
     function initTiltEffect() {
         const tiltCards = document.querySelectorAll('.tilt-card');
         if (prefersReducedMotion.matches) return;
@@ -229,6 +231,7 @@
             });
         });
     }
+
     function initParallaxPortrait() {
         const wrapper = document.querySelector('.parallax-portrait');
         if (!wrapper) return;
@@ -360,6 +363,7 @@
 
         setTimeout(tick, 500);
     }
+
     function initCopyEmail() {
         const copyBtn = document.getElementById('copy-email-btn');
         if (!copyBtn) return;
@@ -372,17 +376,19 @@
                 showToast('Email address copied to clipboard!');
             });
         };
+
         copyBtn.addEventListener('click', (e) => {
             e.preventDefault();
             copy();
         });
-        copyBtn.addEventListener('keydown', (e) => {  //NEW FILE BY SHUBH
+        copyBtn.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 copy();
             }
         });
     }
+
     function showToast(message) {
         let toast = document.querySelector('.toast-msg');
         if (!toast) {
